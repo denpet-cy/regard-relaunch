@@ -13,204 +13,51 @@
             --text-muted: #c5a1ff;
             --accent-red: #ff3366;
         }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
-            border-bottom: 2px dashed var(--primary-neon);
-        }
-
-        .logo-ticker {
-            font-size: 3.5rem;
-            font-weight: bold;
-            color: var(--primary-neon);
-            text-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
-            margin: 0;
-            letter-spacing: 2px;
-        }
-
-        .tagline {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-top: 10px;
-            text-transform: uppercase;
-        }
-
-        .ticker-bar {
-            background-color: var(--accent-red);
-            color: black;
-            font-weight: bold;
-            padding: 10px 0;
-            overflow: hidden;
-            white-space: nowrap;
-            box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
-        }
-
-        .ticker-text {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-            text-transform: uppercase;
-        }
-
-        @keyframes marquee {
-            0% { transform: translate3d(100%, 0, 0); }
-            100% { transform: translate3d(-100%, 0, 0); }
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .intro-box {
-            background-color: var(--card-bg);
-            border-left: 5px solid var(--primary-neon);
-            padding: 30px;
-            margin-bottom: 50px;
-            border-radius: 4px;
-        }
-
-        .intro-box h2 {
-            margin-top: 0;
-            color: var(--primary-neon);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid #2d3748;
-            border-radius: 8px;
-            padding: 25px;
-            position: relative;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-neon);
-        }
-
-        .card-badge {
-            position: absolute;
-            top: -12px;
-            right: 15px;
-            background-color: var(--primary-neon);
-            color: black;
-            font-size: 0.8rem;
-            font-weight: bold;
-            padding: 2px 10px;
-            border-radius: 4px;
-            text-transform: uppercase;
-        }
-
-        .card h3 {
-            color: var(--primary-neon);
-            margin-top: 10px;
-            font-size: 1.4rem;
-        }
-
-        .footer-warning {
-            text-align: center;
-            border-top: 2px dashed #2d3748;
-            padding-top: 40px;
-            margin-top: 60px;
-            color: #718096;
-            font-size: 0.85rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-neon);
-            color: black;
-            padding: 12px 24px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 4px;
-            text-transform: uppercase;
-            margin-top: 15px;
-            box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: white;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-        }
+        body { font-family: 'Courier New', Courier, monospace; background-color: var(--bg-color); color: var(--text-main); margin: 0; padding: 0; line-height: 1.6; }
+        header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%); border-bottom: 2px dashed var(--primary-neon); }
+        .logo-ticker { font-size: 3.5rem; font-weight: bold; color: var(--primary-neon); text-shadow: 0 0 15px rgba(0, 255, 204, 0.6); margin: 0; letter-spacing: 2px; }
+        .tagline { font-size: 1.2rem; color: var(--text-muted); margin-top: 10px; text-transform: uppercase; }
+        .ticker-bar { background-color: var(--accent-red); color: black; font-weight: bold; padding: 10px 0; overflow: hidden; white-space: nowrap; }
+        .ticker-text { display: inline-block; animation: marquee 20s linear infinite; text-transform: uppercase; }
+        @keyframes marquee { 0% { transform: translate3d(100%, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .intro-box { background-color: var(--card-bg); border-left: 5px solid var(--primary-neon); padding: 30px; margin-bottom: 50px; border-radius: 4px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .card { background-color: var(--card-bg); border: 1px solid #2d3748; border-radius: 8px; padding: 25px; position: relative; }
+        .card-badge { position: absolute; top: -12px; right: 15px; background-color: var(--primary-neon); color: black; font-size: 0.8rem; font-weight: bold; padding: 2px 10px; border-radius: 4px; text-transform: uppercase; }
+        .card h3 { color: var(--primary-neon); margin-top: 10px; font-size: 1.4rem; }
+        .footer-warning { text-align: center; border-top: 2px dashed #2d3748; padding-top: 40px; margin-top: 60px; color: #718096; font-size: 0.85rem; }
+        .btn { display: inline-block; background-color: var(--primary-neon); color: black; padding: 12px 24px; font-weight: bold; text-decoration: none; border-radius: 4px; text-transform: uppercase; margin-top: 15px; }
+        .social-links { margin-top: 20px; }
+        .social-links a { color: var(--primary-neon); text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
     </style>
 </head>
 <body>
-
     <header>
         <p style="color: var(--accent-red); margin: 0; font-weight: bold;">[ TRANSMISSION RECONNECTED ]</p>
         <h1 class="logo-ticker">$REGARD</h1>
         <div class="tagline">The Relaunch Protocol — No Fear. Full Send.</div>
     </header>
-
     <div class="ticker-bar">
-        <div class="ticker-text">
-            ★ BRAIN: OFFLINE ★ HANDS: DIAMOND ★ CONVICTION: 100% ★ EXIT: WHAT EXIT? ★ 100% FIXED SUPPLY ★ NO RISK NO RAMEN ★ 
-        </div>
+        <div class="ticker-text">★ BRAIN: OFFLINE ★ HANDS: DIAMOND ★ CONVICTION: 100% ★ EXIT: WHAT EXIT? ★</div>
     </div>
-
     <div class="container">
-        
         <div class="intro-box">
             <h2>THE RETURN OF THE REGARDS</h2>
-            <p>Living the regarded lifestyle isn't for the faint of heart. We bought the top, we fumbled the bag, and now we re-awaken. $REGARD is staging a strategic on-chain herlaunch designed to protect our diamond hands and leave the snipers crying in the dark.</p>
-            <p><strong>Status:</strong> Upgrading smart contracts for deployment on the Robinhood Chain feed.</p>
-            <a href="#" class="btn">View Blueprint</a>
+            <p>$REGARD is staging a strategic on-chain relaunch designed to protect diamond hands.</p>
+            <a href="https://t.me/regardsonrobinhoodcto" target="_blank" class="btn">Join Telegram Chat</a>
         </div>
-
-        <h2 style="color: var(--primary-neon); text-align: center; margin-bottom: 40px; text-transform: uppercase;">Anti-Sniper & Retention Architecture</h2>
-
         <div class="grid">
-            <!-- Phase 1 Card -->
-            <div class="card">
-                <div class="card-badge">Minutes 0-10</div>
-                <h3>Fixed Price Launch Phase</h3>
-                <p>To completely eliminate MEV bots and front-running snipers, the first 10 minutes of the launch will feature a flat-rate price ceiling. No matter how much volume floods the pool instantly, everyone in this window gets the exact same entry price. No gas wars. No artificial green candles.</p>
-            </div>
-
-            <!-- Phase 2 Card -->
-            <div class="card">
-                <div class="card-badge">Privacy Shield</div>
-                <h3>The Shielded Launch</h3>
-                <p>We are integrating privacy-preserving technology to obfuscate raw transaction details and pool depth within the public mempool during the initial token generation. Sniper bots cannot target or exploit contract parameters they cannot see. Pure execution, zero pre-running.</p>
-            </div>
-
-            <!-- Phase 3 Card -->
-            <div class="card">
-                <div class="card-badge">Loyalty Loop</div>
-                <h3>Zcash (ZEC) Rewards</h3>
-                <p>True conviction deserves true protection. A permanent percentage of on-chain activity taxes will be hardcoded to auto-convert and distribute privacy-centric Zcash (ZEC) rewards directly into the wallets of current $REGARD holders. Your passive stack builds while the matrix panics.</p>
-            </div>
+            <div class="card"><div class="card-badge">Minutes 0-10</div><h3>Fixed Price Launch</h3><p>Flat-rate price ceiling to eliminate MEV bots and front-running snipers.</p></div>
+            <div class="card"><div class="card-badge">Privacy Shield</div><h3>Shielded Launch</h3><p>Obfuscating raw transaction details within the public mempool.</p></div>
+            <div class="card"><div class="card-badge">Loyalty Loop</div><h3>Zcash Rewards</h3><p>On-chain activity taxes auto-convert into ZEC rewards for holders.</p></div>
         </div>
-
         <div class="footer-warning">
-            <p>WARNING: FINANCIAL QUALIFICATIONS NOT FOUND.</p>
-            <p>$REGARD is a community meme coin built purely for entertainment and absolute degen conviction. Intelligence is strictly not included. Only ape what you can afford to turn into dust.</p>
-            <p>© 2026 $REGARD Community · Built for the WallStreetBets Timeline.</p>
+            <p>$REGARD is a community meme coin built purely for entertainment.</p>
+            <div class="social-links">
+                <a href="https://t.me/regardsonrobinhoodcto" target="_blank">Telegram</a>
+            </div>
         </div>
-
     </div>
-
 </body>
 </html>
